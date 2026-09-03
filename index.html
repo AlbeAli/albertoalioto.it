@@ -4,159 +4,390 @@
     <base href="/portfolio/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alberto Alioto - Senior RPA Analyst & Developer. Esperto in automazione intelligente, AI orchestration e business process optimization.">
-    <meta name="keywords" content="RPA, UiPath, Automation Anywhere, AI, Business Automation, Python, SQL">
-    <meta property="og:title" content="Alberto Alioto - RPA Solution Architect">
-    <meta property="og:description" content="Senior IT Professional | 7+ anni di esperienza in automazione intelligente e AI">
-    <meta property="og:image" content="https://albertoalioto.it/assets/og-image.jpg">
+    <meta name="description" content="Alberto Alioto — Senior Automation & AI Specialist. Progettazione e implementazione di soluzioni RPA enterprise, AI orchestration e business process optimization.">
+    <meta property="og:title" content="Alberto Alioto — Automation & AI Specialist">
+    <meta property="og:description" content="7+ anni di esperienza in automazione intelligente, RPA e integrazione AI in contesti Big Four ed enterprise.">
     <meta property="og:type" content="website">
-    <title>Alberto Alioto - Senior RPA Analyst & Developer</title>
+    <title>Alberto Alioto — Automation & AI Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://albertoalioto.it">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container navbar-content">
-            <div class="logo">
-                <a href="index.html" class="logo-text">Alberto Alioto</a>
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">Chi Sono</a></li>
-                    <li><a href="experience.html">Esperienze</a></li>
-                    <li><a href="skills.html">Competenze</a></li>
-                </ul>
-            </nav>
-            <div class="nav-cta">
-                <a href="assets/cv-alberto-alioto.pdf" target="_blank" class="btn btn-secondary">Scarica CV</a>
+
+<!-- ========== NAVBAR ========== -->
+<header class="navbar" id="navbar">
+    <div class="container nav-inner">
+        <a href="#hero" class="nav-logo">Alberto Alioto</a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#about" data-it="Chi sono" data-en="About">Chi sono</a>
+            <a href="#experience" data-it="Esperienze" data-en="Experience">Esperienze</a>
+            <a href="#skills" data-it="Competenze" data-en="Skills">Competenze</a>
+            <a href="#certifications" data-it="Certificazioni" data-en="Certifications">Certificazioni</a>
+            <a href="#contact" data-it="Contatti" data-en="Contact">Contatti</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-active">IT</span> / <span class="lang-inactive">EN</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <p class="hero-label" data-it="Senior Automation & AI Specialist" data-en="Senior Automation & AI Specialist">Senior Automation & AI Specialist</p>
+            <h1>Alberto Alioto</h1>
+            <p class="hero-desc" data-it="Oltre 7 anni di esperienza nella progettazione e nell'implementazione di soluzioni di automazione intelligente in contesti Big Four ed enterprise. Certificato UiPath e Automation Anywhere, con risultati misurabili in efficienza operativa e riduzione dei costi." data-en="Over 7 years of experience designing and implementing intelligent automation solutions in Big Four and enterprise environments. UiPath and Automation Anywhere certified, with measurable results in operational efficiency and cost reduction.">Oltre 7 anni di esperienza nella progettazione e nell'implementazione di soluzioni di automazione intelligente in contesti Big Four ed enterprise. Certificato UiPath e Automation Anywhere, con risultati misurabili in efficienza operativa e riduzione dei costi.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary" data-it="Contattami" data-en="Get in touch">Contattami</a>
+                <a href="assets/cv-alberto-alioto.pdf" target="_blank" class="btn-outline" data-it="Scarica il CV" data-en="Download CV">Scarica il CV</a>
             </div>
         </div>
-    </header>
+        <div class="hero-photo">
+            <img src="assets/alberto-alioto.png" alt="Alberto Alioto" width="400" height="433">
+        </div>
+    </div>
+</section>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Automation Architect</h1>
-                    <h2>Specialista in RPA, AI Orchestration e Business Process Optimization</h2>
-                    <p>7+ anni di esperienza nella progettazione e implementazione di soluzioni di automazione intelligente in contesti Big Four ed enterprise.</p>
-                    <div class="hero-cta">
-                        <a href="about.html" class="btn btn-primary">Scopri di più</a>
-                        <a href="#contact" class="btn btn-secondary">Contattami</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="avatar-placeholder">AA</div>
-                </div>
-            </div>
-        </section>
+<!-- ========== METRICS ========== -->
+<section class="metrics">
+    <div class="container metrics-grid">
+        <div class="metric-item">
+            <span class="metric-number">30+</span>
+            <span class="metric-text" data-it="Soluzioni RPA implementate" data-en="RPA solutions delivered">Soluzioni RPA implementate</span>
+        </div>
+        <div class="metric-item">
+            <span class="metric-number">–40%</span>
+            <span class="metric-text" data-it="Tempi di elaborazione manuale" data-en="Manual processing time">Tempi di elaborazione manuale</span>
+        </div>
+        <div class="metric-item">
+            <span class="metric-number">+200</span>
+            <span class="metric-text" data-it="Ore/mese recuperate" data-en="Hours/month recovered">Ore/mese recuperate</span>
+        </div>
+        <div class="metric-item">
+            <span class="metric-number">–15%</span>
+            <span class="metric-text" data-it="Riduzione OPEX IT" data-en="IT OPEX reduction">Riduzione OPEX IT</span>
+        </div>
+    </div>
+</section>
 
-        <section class="highlights">
-            <div class="container">
-                <h2 class="section-title">Competenze Chiave</h2>
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🤖</div>
-                        <h3>RPA & Automation</h3>
-                        <p>UiPath, Automation Anywhere, Appian | 30+ soluzioni implementate | -40% tempi elaborazione manuale</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🧠</div>
-                        <h3>AI Integration</h3>
-                        <p>LLM, Agentic AI, Workflow intelligenti | Knowledge Transfer | Community Mentorship</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">📊</div>
-                        <h3>Business Analysis</h3>
-                        <p>Business Case Development | ROI Analysis | Process Design Documents | Feasibility Study</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">💻</div>
-                        <h3>Technical Stack</h3>
-                        <p>Python, SQL, Java, VB.NET | API Integration | Database Management | Cloud Architecture</p>
-                    </div>
-                </div>
+<!-- ========== ABOUT ========== -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-heading" data-it="Chi sono" data-en="About me">Chi sono</h2>
+        <div class="about-grid">
+            <div class="about-main">
+                <p data-it="Professionista IT Senior specializzato nell'orchestrazione dell'intero ciclo di vita dell'automazione: dall'analisi di fattibilità e la redazione di Business Case strategici, fino al design, allo sviluppo e al deployment di soluzioni RPA ad alto impatto su piattaforme UiPath e Automation Anywhere." data-en="Senior IT Professional specialising in full automation lifecycle orchestration: from feasibility analysis and strategic business case development to the design, build and deployment of high-impact RPA solutions on UiPath and Automation Anywhere platforms.">Professionista IT Senior specializzato nell'orchestrazione dell'intero ciclo di vita dell'automazione: dall'analisi di fattibilità e la redazione di Business Case strategici, fino al design, allo sviluppo e al deployment di soluzioni RPA ad alto impatto su piattaforme UiPath e Automation Anywhere.</p>
+                <p data-it="Attualmente in transizione verso ruoli di AI Management, Solution Architecture e AI Orchestration, con un focus specifico sull'integrazione di Large Language Models e workflow di AI agentica in contesti enterprise." data-en="Currently transitioning towards AI Management, Solution Architecture and AI Orchestration roles, with a specific focus on integrating Large Language Models and agentic AI workflows in enterprise settings.">Attualmente in transizione verso ruoli di AI Management, Solution Architecture e AI Orchestration, con un focus specifico sull'integrazione di Large Language Models e workflow di AI agentica in contesti enterprise.</p>
+                <p data-it="Formatore attivo in community AI su temi di LLM integration, automazione intelligente e workflow agentici, con approccio da mentor e coach per professionisti in transizione verso ruoli AI-driven." data-en="Active trainer in AI communities on LLM integration, intelligent automation and agentic workflows, with a mentor and coach approach for professionals transitioning to AI-driven roles.">Formatore attivo in community AI su temi di LLM integration, automazione intelligente e workflow agentici, con approccio da mentor e coach per professionisti in transizione verso ruoli AI-driven.</p>
             </div>
-        </section>
-
-        <section class="metrics">
-            <div class="container">
-                <h2 class="section-title">Track Record</h2>
-                <div class="metrics-grid">
-                    <div class="metric">
-                        <div class="metric-value">30+</div>
-                        <div class="metric-label">Soluzioni RPA implementate</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">40%</div>
-                        <div class="metric-label">Riduzione tempi elaborazione</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">200+ ore/mese</div>
-                        <div class="metric-label">Ore recuperate per Operations</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">15%</div>
-                        <div class="metric-label">Riduzione OPEX IT</div>
-                    </div>
+            <div class="about-sidebar">
+                <div class="sidebar-card">
+                    <h3 data-it="Informazioni" data-en="Details">Informazioni</h3>
+                    <dl class="info-dl">
+                        <dt data-it="Ubicazione" data-en="Location">Ubicazione</dt>
+                        <dd>Catania, Italia — Open to remote</dd>
+                        <dt data-it="Lingue" data-en="Languages">Lingue</dt>
+                        <dd data-it="Italiano (madrelingua), Inglese (fluente), Francese (professionale), Portoghese (professionale), Spagnolo (base)" data-en="Italian (native), English (fluent), French (professional), Portuguese (professional), Spanish (basic)">Italiano (madrelingua), Inglese (fluente), Francese (professionale), Portoghese (professionale), Spagnolo (base)</dd>
+                        <dt data-it="Formazione" data-en="Education">Formazione</dt>
+                        <dd data-it="Laurea Magistrale in Antropologia — Università di Siena (110/110)" data-en="Master's Degree in Anthropology — University of Siena (110/110)">Laurea Magistrale in Antropologia — Università di Siena (110/110)</dd>
+                        <dd data-it="Laurea Triennale in Scienze della Comunicazione — Università di Urbino (110/110)" data-en="Bachelor's Degree in Communication Sciences — University of Urbino (110/110)">Laurea Triennale in Scienze della Comunicazione — Università di Urbino (110/110)</dd>
+                    </dl>
                 </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="container cta-content">
-                <h2>Pronto a trasformare i tuoi processi?</h2>
-                <p>Contattami per discutere come l'automazione intelligente può ottimizzare le tue operazioni.</p>
-                <div id="contact" class="contact-links">
-                    <a href="mailto:alberto.alioto@gmail.com" class="btn btn-primary">Email</a>
-                    <a href="https://linkedin.com/in/alberto-alioto/" target="_blank" class="btn btn-secondary">LinkedIn</a>
-                    <a href="tel:+393409831949" class="btn btn-secondary">Telefono</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Alberto Alioto</h3>
-                    <p>Senior RPA Analyst & Developer | AI Orchestration Specialist</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Link Utili</h4>
-                    <ul>
-                        <li><a href="about.html">Chi Sono</a></li>
-                        <li><a href="experience.html">Esperienze</a></li>
-                        <li><a href="skills.html">Competenze</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contatti</h4>
-                    <ul>
-                        <li><a href="mailto:alberto.alioto@gmail.com">Email</a></li>
-                        <li><a href="https://linkedin.com/in/alberto-alioto/" target="_blank">LinkedIn</a></li>
-                        <li><a href="tel:+393409831949">+39 340 983 1949</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Alberto Alioto. Tutti i diritti riservati.</p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<!-- ========== EXPERIENCE ========== -->
+<section class="section section-alt" id="experience">
+    <div class="container">
+        <h2 class="section-heading" data-it="Esperienze professionali" data-en="Professional experience">Esperienze professionali</h2>
+
+        <div class="timeline">
+            <article class="timeline-item">
+                <div class="timeline-marker current"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>AI Trainer & Knowledge Transfer</h3>
+                        <span class="timeline-company">AI Next</span>
+                        <span class="timeline-date" data-it="Ott 2025 — Attuale" data-en="Oct 2025 — Present">Ott 2025 — Attuale</span>
+                    </div>
+                    <ul>
+                        <li data-it="Progettazione ed erogazione di sessioni formative pratiche su integrazione LLM, automazione intelligente e workflow di AI agentica" data-en="Design and delivery of hands-on training sessions on LLM integration, intelligent automation and agentic AI workflows">Progettazione ed erogazione di sessioni formative pratiche su integrazione LLM, automazione intelligente e workflow di AI agentica</li>
+                        <li data-it="Mentoring e coaching su casi d'uso AI reali, con produzione di contenuti didattici e facilitazione di sessioni pratiche hands-on" data-en="Mentoring and coaching on real AI use cases, producing educational content and facilitating hands-on practical sessions">Mentoring e coaching su casi d'uso AI reali, con produzione di contenuti didattici e facilitazione di sessioni pratiche hands-on</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="timeline-item">
+                <div class="timeline-marker current"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Senior RPA Analyst & Developer</h3>
+                        <span class="timeline-company">Poseidon SB</span>
+                        <span class="timeline-date" data-it="Dic 2021 — Attuale" data-en="Dec 2021 — Present">Dic 2021 — Attuale</span>
+                    </div>
+                    <ul>
+                        <li data-it="Supervisione end-to-end di oltre 30 soluzioni RPA ad alto impatto su UiPath e Automation Anywhere: design, sviluppo, deployment e integrazione via API, SQL e Python" data-en="End-to-end oversight of 30+ high-impact RPA solutions on UiPath and Automation Anywhere: design, development, deployment and integration via API, SQL and Python">Supervisione end-to-end di oltre 30 soluzioni RPA ad alto impatto su UiPath e Automation Anywhere: design, sviluppo, deployment e integrazione via API, SQL e Python</li>
+                        <li data-it="Riduzione del 40% dei tempi di elaborazione manuale e recupero di oltre 200 ore/mese per i team Operations" data-en="40% reduction in manual processing time and recovery of 200+ hours/month for Operations teams">Riduzione del 40% dei tempi di elaborazione manuale e recupero di oltre 200 ore/mese per i team Operations</li>
+                        <li data-it="Redazione di Business Case strategici, analisi di fattibilità e Process Design Documents in contesto Agile/Scrum" data-en="Strategic Business Case drafting, feasibility analyses and Process Design Documents within Agile/Scrum framework">Redazione di Business Case strategici, analisi di fattibilità e Process Design Documents in contesto Agile/Scrum</li>
+                        <li data-it="Coordinamento del rilascio di automazioni in ambito Finance e HR, garantendo allineamento con le priorità organizzative" data-en="Coordination of automation releases across Finance and HR, ensuring alignment with organisational priorities">Coordinamento del rilascio di automazioni in ambito Finance e HR, garantendo allineamento con le priorità organizzative</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="timeline-item">
+                <div class="timeline-marker current"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>IT Systems Administrator</h3>
+                        <span class="timeline-company">Poseidon SB</span>
+                        <span class="timeline-date" data-it="Dic 2024 — Attuale" data-en="Dec 2024 — Present">Dic 2024 — Attuale</span>
+                    </div>
+                    <ul>
+                        <li data-it="Supervisione strategica degli asset IT interni con riduzione del 15% degli OPEX e massimizzazione del ROI" data-en="Strategic oversight of internal IT assets with 15% OPEX reduction and ROI maximisation">Supervisione strategica degli asset IT interni con riduzione del 15% degli OPEX e massimizzazione del ROI</li>
+                        <li data-it="Produzione di reportistica direzionale per il Management Board tramite dashboard KPI e analisi SWOT" data-en="Executive reporting for the Management Board through KPI dashboards and SWOT analysis">Produzione di reportistica direzionale per il Management Board tramite dashboard KPI e analisi SWOT</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>RPA Analyst & Developer</h3>
+                        <span class="timeline-company">Arces</span>
+                        <span class="timeline-date" data-it="Set 2021 — Dic 2021" data-en="Sep 2021 — Dec 2021">Set 2021 — Dic 2021</span>
+                    </div>
+                    <ul>
+                        <li data-it="Sviluppo di bot RPA per l'automazione di processi interni nel settore Logistica" data-en="RPA bot development for internal process automation in the Logistics sector">Sviluppo di bot RPA per l'automazione di processi interni nel settore Logistica</li>
+                        <li data-it="Valutazione dell'applicabilità delle tecnologie di automazione tramite Proof of Concept su fattibilità tecnica e valore di business" data-en="Automation technology applicability assessment through Proof of Concept on technical feasibility and business value">Valutazione dell'applicabilità delle tecnologie di automazione tramite Proof of Concept su fattibilità tecnica e valore di business</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Technical Account Manager</h3>
+                        <span class="timeline-company">Ubisoft</span>
+                        <span class="timeline-date" data-it="Ott 2018 — Ago 2019" data-en="Oct 2018 — Aug 2019">Ott 2018 — Ago 2019</span>
+                    </div>
+                    <ul>
+                        <li data-it="Referente tecnico SPOC per clienti internazionali: gestione escalation Tier II/III per servizi software e infrastrutturali" data-en="Technical SPOC for international clients: Tier II/III escalation management for software and infrastructure services">Referente tecnico SPOC per clienti internazionali: gestione escalation Tier II/III per servizi software e infrastrutturali</li>
+                        <li data-it="Redazione di knowledge base tecnica e troubleshooting guide con riduzione del 10% dei tempi di risposta del supporto" data-en="Technical knowledge base and troubleshooting guide authoring, achieving a 10% reduction in support response time">Redazione di knowledge base tecnica e troubleshooting guide con riduzione del 10% dei tempi di risposta del supporto</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Content Editor & Translator</h3>
+                        <span class="timeline-company">Appen</span>
+                        <span class="timeline-date" data-it="Apr 2020 — Ago 2021" data-en="Apr 2020 — Aug 2021">Apr 2020 — Ago 2021</span>
+                    </div>
+                    <ul>
+                        <li data-it="Gestione di contenuti multicanale con focus su strategia SEO e ottimizzazione UX/UI per massimizzare visibilità organica e conversioni" data-en="Multi-channel content management with SEO strategy and UX/UI optimisation focus to maximise organic visibility and conversions">Gestione di contenuti multicanale con focus su strategia SEO e ottimizzazione UX/UI per massimizzare visibilità organica e conversioni</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section class="section" id="skills">
+    <div class="container">
+        <h2 class="section-heading" data-it="Competenze" data-en="Skills">Competenze</h2>
+        <div class="skills-grid">
+            <div class="skill-block">
+                <h3>Automation & RPA</h3>
+                <div class="tags">
+                    <span>UiPath</span><span>Automation Anywhere</span><span>Appian</span><span>RPA Architecture</span><span>Process Assessment</span>
+                </div>
+            </div>
+            <div class="skill-block">
+                <h3>AI & Integration</h3>
+                <div class="tags">
+                    <span>LLM Integration</span><span>Agentic AI</span><span>AI Orchestration</span><span>Prompt Engineering</span>
+                </div>
+            </div>
+            <div class="skill-block">
+                <h3 data-it="Analisi & Strategia" data-en="Analysis & Strategy">Analisi & Strategia</h3>
+                <div class="tags">
+                    <span>Business Case</span><span>ROI Analysis</span><span>PDD Drafting</span><span>Feasibility Study</span><span>Agile/Scrum</span>
+                </div>
+            </div>
+            <div class="skill-block">
+                <h3 data-it="Sviluppo" data-en="Development">Sviluppo</h3>
+                <div class="tags">
+                    <span>Python</span><span>SQL</span><span>Java</span><span>VB.NET</span><span>HTML/CSS</span><span>API Integration</span>
+                </div>
+            </div>
+            <div class="skill-block">
+                <h3>Tools & Platforms</h3>
+                <div class="tags">
+                    <span>GitHub</span><span>Salesforce</span><span>Workday</span><span>Figma</span><span>Notion</span><span>Slack</span><span>Claude</span><span>Gemini</span><span>NotebookLM</span>
+                </div>
+            </div>
+            <div class="skill-block">
+                <h3>Analytics</h3>
+                <div class="tags">
+                    <span>KPI Analysis</span><span>SWOT Analysis</span><span>Data Visualization</span><span>Web Analytics</span><span>Dashboard & Reporting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CERTIFICATIONS ========== -->
+<section class="section section-alt" id="certifications">
+    <div class="container">
+        <h2 class="section-heading" data-it="Certificazioni" data-en="Certifications">Certificazioni</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <span class="cert-year">2025</span>
+                <h4>UiPath Certified Professional — Automation Developer Advanced</h4>
+                <p>UiPath</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-year">2025</span>
+                <h4>UiPath Certified Professional — Specialized AI Associate</h4>
+                <p>UiPath</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-year">2023</span>
+                <h4>Automation Anywhere Certified Advanced RPA Professional</h4>
+                <p>Automation Anywhere</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-year">2021</span>
+                <h4>Java Developer</h4>
+                <p>Tree</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-year">2019</span>
+                <h4>Responsive Web Designer Certification</h4>
+                <p>freeCodeCamp</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-year">2019</span>
+                <h4>Challenge Scholarship — Front-End Web Development</h4>
+                <p>Udacity</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-year">2017</span>
+                <h4>Digital Excellence</h4>
+                <p>Google LLC</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section contact" id="contact">
+    <div class="container contact-inner">
+        <h2 class="section-heading" data-it="Contatti" data-en="Contact">Contatti</h2>
+        <p class="contact-lead" data-it="Disponibile per discutere di automazione intelligente, AI orchestration e trasformazione digitale." data-en="Available to discuss intelligent automation, AI orchestration and digital transformation.">Disponibile per discutere di automazione intelligente, AI orchestration e trasformazione digitale.</p>
+        <div class="contact-grid">
+            <a href="mailto:alberto.alioto@gmail.com" class="contact-card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>alberto.alioto@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/alberto-alioto/" target="_blank" class="contact-card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>linkedin.com/in/alberto-alioto</span>
+            </a>
+            <a href="tel:+393409831949" class="contact-card">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+39 340 983 1949</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>&copy; 2025 Alberto Alioto</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/alberto-alioto/" target="_blank">LinkedIn</a>
+            <a href="mailto:alberto.alioto@gmail.com">Email</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ===== LANGUAGE TOGGLE =====
+let currentLang = 'it';
+const langToggle = document.getElementById('langToggle');
+
+langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'it' ? 'en' : 'it';
+    document.documentElement.lang = currentLang;
+
+    // Update toggle button
+    const spans = langToggle.querySelectorAll('span');
+    if (currentLang === 'en') {
+        spans[0].className = 'lang-inactive';
+        spans[1].className = 'lang-active';
+    } else {
+        spans[0].className = 'lang-active';
+        spans[1].className = 'lang-inactive';
+    }
+
+    // Update all translatable elements
+    document.querySelectorAll('[data-it][data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + currentLang);
+    });
+});
+
+// ===== MOBILE MENU =====
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    menuToggle.classList.toggle('open');
+});
+
+// Close on link click
+navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('open');
+    });
+});
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const offset = 80;
+            const top = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }
+    });
+});
+
+// ===== NAVBAR SCROLL EFFECT =====
+window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
 </body>
 </html>

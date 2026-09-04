@@ -49,7 +49,7 @@ body {
 
 /* Typographic scale — explicit, no ambiguity */
 h1, h2, h3, h4, h5 {
-    font-family: 'DM Sans', 'Inter', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 700;
     color: var(--t1);
     line-height: 1.15;
@@ -100,8 +100,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .nav-logo {
-    font-family: 'DM Sans', 'Inter', sans-serif;
-    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
     font-size: 1.1rem;
     color: var(--navy);
 }
@@ -185,18 +185,18 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-inner {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 260px 1fr;
     gap: 4rem;
     align-items: center;
 }
 
 .photo-wrap img {
     width: 240px;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
     object-position: center top;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px rgba(196,154,30,.35), var(--sh2);
+    border-radius: 4px;
+    box-shadow: 7px 7px 0 var(--gold), var(--sh2);
 }
 
 .hero-role {
@@ -230,7 +230,7 @@ img { max-width: 100%; height: auto; display: block; }
     padding: .75rem 1.625rem;
     background: var(--gold);
     color: var(--navy);
-    font-family: 'DM Sans', 'Inter', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: .875rem;
     border-radius: var(--r);
@@ -273,9 +273,9 @@ img { max-width: 100%; height: auto; display: block; }
     text-align: center;
 }
 
-/* metric number — intentionally large, gold */
+/* metric number — intentionally large, gold, Syne */
 .met strong {
-    font-family: 'DM Sans', 'Inter', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 1.75rem;
     font-weight: 800;
     color: var(--gold);
@@ -340,14 +340,6 @@ h2::after {
 }
 
 /* profile paragraph inherits base p — 1rem, line-height 1.8 */
-.profile-text p {
-    text-align: justify;
-    hyphens: auto;
-}
-.profile-text p strong {
-    color: var(--blue);
-    font-weight: 600;
-}
 
 /* Sidebar */
 .meta-list { list-style: none; }
@@ -454,32 +446,29 @@ h2::after {
 /* Results row */
 .project-results {
     display: flex;
-    gap: .75rem;
-    flex-wrap: nowrap;
-    align-items: flex-end;
+    gap: 1.25rem;
+    flex-wrap: wrap;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, .08);
     margin-top: auto;
 }
 .result-item { display: flex; flex-direction: column; }
 
-/* Result number — large, gold */
+/* Result number — large, gold, Syne */
 .result-item strong {
-    font-family: 'DM Sans', 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--gold);
     line-height: 1;
-    display: block;
 }
 
 /* Result label — clearly smaller */
 .result-item span {
-    font-size: .65rem;
+    font-size: .7rem;
     color: rgba(255, 255, 255, .42);
     margin-top: .2rem;
     line-height: 1.3;
-    display: block;
 }
 
 /* Tech pills */
@@ -627,42 +616,32 @@ h2::after {
 /* ============================================================
    SKILLS TABLE
    ============================================================ */
-.skills-table {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
+.skills-table { display: flex; flex-direction: column; }
 
 .skill-row {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--r);
-    padding: 1.25rem 1.375rem;
-    border-left: 3px solid var(--blue);
-    transition: var(--tr);
-}
-.skill-row:hover {
-    border-left-color: var(--gold);
-    box-shadow: var(--sh);
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 0 2.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: baseline;
 }
 .skill-row:first-child { border-top: 1px solid var(--border); }
 
-/* Category label — DM Sans, slightly larger than description */
+/* Category label — Syne, slightly larger than description */
 .skill-cat {
-    font-family: 'DM Sans', 'Inter', sans-serif;
-    font-size: .8rem;
+    font-family: 'Syne', sans-serif;
+    font-size: .85rem;
     font-weight: 700;
-    color: var(--blue);
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    margin-bottom: .6rem;
-    line-height: 1.4;
+    color: var(--t1);
+    letter-spacing: .005em;
+    line-height: 1.5;
 }
 
 /* Description — Inter, clearly secondary */
 .skill-desc {
-    font-size: .875rem;
-    color: var(--t2);
+    font-size: .9rem;
+    color: var(--t3);
     line-height: 1.75;
 }
 
@@ -691,7 +670,7 @@ h2::after {
 
 /* Year — gold, small */
 .edu-year {
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: 700;
     color: var(--gold);
     padding-top: .15rem;
@@ -700,7 +679,7 @@ h2::after {
 
 /* Degree title — h4, prominent */
 .edu-item h4 {
-    font-size: 1.05rem;
+    font-size: .975rem;
     font-weight: 700;
     color: var(--t1);
     margin-bottom: .3rem;
@@ -709,7 +688,7 @@ h2::after {
 
 /* Institution + grade — clearly smaller */
 .edu-item p {
-    font-size: .875rem;
+    font-size: .82rem;
     color: var(--t4);
     margin-bottom: 0;
     line-height: 1.4;
@@ -730,7 +709,7 @@ h2::after {
 
 /* Year */
 .cert-yr {
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: 700;
     padding-top: .15rem;
     line-height: 1.3;
@@ -740,13 +719,13 @@ h2::after {
 
 /* Cert name — h4 */
 .cert-item.featured h4 {
-    font-size: 1rem;
+    font-size: .95rem;
     font-weight: 700;
     color: var(--t1);
     line-height: 1.35;
 }
 .cert-item.minor h4 {
-    font-size: .9rem;
+    font-size: .875rem;
     font-weight: 500;
     color: var(--t3);
     line-height: 1.35;
@@ -813,8 +792,9 @@ h2::after {
     .hero-right { order: -1; }
     .photo-wrap img {
         width: 180px;
-        height: 180px;
+        height: 195px;
         margin: 0 auto;
+        box-shadow: 4px 4px 0 var(--gold);
     }
     .hero h1 { font-size: 2.75rem; }
     .hero-sub { margin: 0 auto 2rem; }
@@ -841,8 +821,8 @@ h2::after {
     .tl-dot { display: none; }
     .tl-item::before { display: none; }
 
-    .skills-table { grid-template-columns: 1fr; }
-    .skill-cat { margin-bottom: .25rem; }
+    .skill-row { grid-template-columns: 1fr; gap: .25rem; }
+    .skill-cat { margin-bottom: .1rem; }
 
     .edu-cert-grid { grid-template-columns: 1fr; gap: 3.5rem; }
 }
@@ -887,12 +867,7 @@ h2::after {
 .hero-right { /* idem */ }
 
 /* Photo wrap — il blocco padre della foto */
-.photo-wrap {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.photo-wrap { position: relative; }
 
 /* Profile columns */
 .profile-text  { /* colonna testo — layout da profile-grid */ }
